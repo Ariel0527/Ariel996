@@ -3,54 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Airel's personal website — global wholesale e-commerce, education and professional experience.">
-  <meta name="theme-color" content="#f4dfe3">
+  <meta name="description" content="Guardian Angel by Airel — 30,000+ wholesale products, six years of experience and worldwide service from KL and Singapore.">
+  <meta name="theme-color" content="#f6e5e8">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Airel | Global Wholesale E-commerce">
-  <meta property="og:description" content="Based between Kuala Lumpur and Singapore, building connections through global wholesale e-commerce.">
+  <meta property="og:title" content="Guardian Angel | Global Wholesale by Airel">
+  <meta property="og:description" content="30,000+ products. Six years of wholesale experience. Worldwide possibilities.">
   <meta property="og:url" content="https://ariel0527.github.io/Ariel996/">
   <meta property="og:image" content="https://ariel0527.github.io/Ariel996/social-preview.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Airel — Global Wholesale E-commerce">
+  <meta property="og:image:alt" content="Airel — Guardian Angel global wholesale">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Airel | Global Wholesale E-commerce">
-  <meta name="twitter:description" content="Based between Kuala Lumpur and Singapore, building connections through global wholesale e-commerce.">
+  <meta name="twitter:title" content="Guardian Angel | Global Wholesale by Airel">
+  <meta name="twitter:description" content="30,000+ products. Six years of wholesale experience. Worldwide possibilities.">
   <meta name="twitter:image" content="https://ariel0527.github.io/Ariel996/social-preview.jpg">
-  <title>Airel | Global Wholesale E-commerce</title>
+  <title>Guardian Angel | Global Wholesale by Airel</title>
+  <script>document.documentElement.classList.add('js');</script>
   <style>
     :root {
-      --wine: #542f38;
-      --wine-soft: #754952;
-      --rose: #c98f9a;
-      --rose-light: #efd1d7;
-      --blush: #f7e6e9;
-      --powder: #fbf1f2;
+      --wine: #4b2932;
+      --wine-2: #6a3e49;
+      --rose: #c98291;
+      --rose-2: #e6b7c0;
+      --blush: #f6e5e8;
+      --powder: #fbf2f3;
       --cream: #fffaf8;
       --white: #ffffff;
-      --ink: #382d30;
-      --muted: #7e6c70;
-      --line: rgba(84, 47, 56, 0.14);
-      --shadow: 0 30px 90px rgba(84, 47, 56, 0.14);
+      --ink: #33282b;
+      --muted: #79696d;
+      --line: rgba(75, 41, 50, 0.13);
+      --shadow: 0 28px 80px rgba(75, 41, 50, 0.14);
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
     * { box-sizing: border-box; }
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 100px;
+      scroll-padding-top: 104px;
     }
 
     body {
       margin: 0;
       color: var(--ink);
-      background: var(--cream);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 8% 5%, rgba(230, 183, 192, 0.19), transparent 23rem),
+        var(--cream);
+      font-family: var(--sans);
       line-height: 1.65;
       overflow-x: hidden;
     }
 
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      opacity: 0.24;
+      pointer-events: none;
+      background-image: radial-gradient(rgba(75, 41, 50, 0.14) 0.55px, transparent 0.55px);
+      background-size: 8px 8px;
+    }
+
     a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    img { max-width: 100%; }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid rgba(201, 130, 145, 0.5);
+      outline-offset: 4px;
+    }
+
+    .skip-link {
+      position: fixed;
+      left: 18px;
+      top: -80px;
+      z-index: 100;
+      padding: 10px 16px;
+      border-radius: 99px;
+      color: var(--white);
+      background: var(--wine);
+      transition: top 0.2s ease;
+    }
+
+    .skip-link:focus { top: 18px; }
 
     .container {
       width: min(1180px, calc(100% - 44px));
@@ -59,94 +97,147 @@
 
     .topbar {
       position: sticky;
-      top: 14px;
-      z-index: 20;
-      padding-top: 14px;
+      top: 12px;
+      z-index: 50;
+      padding-top: 12px;
     }
 
     nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 28px;
-      padding: 11px 12px 11px 24px;
-      border: 1px solid rgba(255, 255, 255, 0.8);
+      gap: 22px;
+      padding: 9px 10px 9px 15px;
+      border: 1px solid rgba(255, 255, 255, 0.84);
       border-radius: 999px;
-      background: rgba(255, 250, 248, 0.84);
-      box-shadow: 0 15px 50px rgba(84, 47, 56, 0.09);
+      background: rgba(255, 250, 248, 0.86);
+      box-shadow: 0 15px 50px rgba(75, 41, 50, 0.1);
       backdrop-filter: blur(18px);
     }
 
-    .logo {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 25px;
-      font-style: italic;
-      font-weight: 500;
-      letter-spacing: -0.03em;
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
     }
 
-    .logo::after { content: "."; color: var(--rose); }
+    .brand-mark {
+      display: grid;
+      flex: 0 0 auto;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      color: var(--white);
+      background: linear-gradient(145deg, var(--wine), var(--rose));
+      font-family: var(--serif);
+      font-size: 18px;
+      font-style: italic;
+      box-shadow: 0 8px 20px rgba(75, 41, 50, 0.18);
+    }
 
+    .brand-copy { display: grid; line-height: 1.05; }
+
+    .brand-copy strong {
+      font-family: var(--serif);
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-copy small {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 0.17em;
+      text-transform: uppercase;
+    }
+
+    .nav-right,
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 4px;
     }
 
-    .nav-links a {
-      padding: 9px 14px;
+    .nav-links a,
+    .language-toggle {
+      padding: 9px 13px;
+      border: 0;
       border-radius: 999px;
       color: var(--muted);
-      font-size: 13px;
-      font-weight: 700;
+      background: transparent;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
       transition: 0.2s ease;
     }
 
-    .nav-links a:hover { color: var(--wine); background: var(--blush); }
+    .nav-links a:hover,
+    .language-toggle:hover { color: var(--wine); background: var(--blush); }
 
-    .nav-links .contact-nav {
-      padding: 10px 18px;
+    .language-toggle {
+      min-width: 58px;
+      border: 1px solid var(--line);
+      color: var(--wine);
+    }
+
+    .contact-nav {
+      display: inline-flex;
+      align-items: center;
+      min-height: 41px;
+      padding: 0 17px;
+      border-radius: 999px;
       color: var(--white);
       background: var(--wine);
+      font-size: 12px;
+      font-weight: 800;
+      transition: 0.2s ease;
     }
+
+    .contact-nav:hover { transform: translateY(-1px); background: var(--wine-2); }
 
     .hero {
       position: relative;
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+      grid-template-columns: 1.08fr 0.92fr;
       align-items: center;
-      gap: clamp(50px, 8vw, 112px);
+      gap: clamp(52px, 8vw, 108px);
       min-height: calc(100vh - 72px);
-      padding: 68px 0 88px;
+      padding: 72px 0 82px;
     }
 
     .hero::before {
-      content: "";
+      content: "GA";
       position: absolute;
+      left: -56px;
+      top: 43%;
       z-index: -1;
-      width: 540px;
-      height: 540px;
-      left: -330px;
-      top: -110px;
-      border: 1px solid rgba(201, 143, 154, 0.28);
-      border-radius: 50%;
+      color: rgba(201, 130, 145, 0.06);
+      font-family: var(--serif);
+      font-size: clamp(150px, 22vw, 320px);
+      font-style: italic;
+      line-height: 0.7;
+      pointer-events: none;
     }
 
-    .overline {
+    .eyebrow {
       display: flex;
       align-items: center;
       gap: 12px;
-      margin: 0 0 26px;
-      color: var(--wine-soft);
-      font-size: 12px;
-      font-weight: 800;
+      margin: 0 0 24px;
+      color: var(--wine-2);
+      font-size: 11px;
+      font-weight: 900;
       letter-spacing: 0.2em;
       text-transform: uppercase;
     }
 
-    .overline::before {
+    .eyebrow::before {
       content: "";
-      width: 44px;
+      width: 42px;
       height: 1px;
       background: var(--rose);
     }
@@ -154,36 +245,37 @@
     h1, h2, h3, p { margin-top: 0; }
 
     h1 {
-      max-width: 670px;
+      max-width: 720px;
       margin-bottom: 26px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(64px, 8.2vw, 112px);
+      font-family: var(--serif);
+      font-size: clamp(66px, 8.4vw, 116px);
       font-weight: 400;
-      letter-spacing: -0.065em;
-      line-height: 0.86;
+      letter-spacing: -0.068em;
+      line-height: 0.84;
     }
 
-    h1 span {
+    h1 em {
       display: block;
-      margin-top: 18px;
+      margin-top: 20px;
       color: var(--rose);
-      font-size: 0.5em;
-      font-style: italic;
-      letter-spacing: -0.04em;
+      font-size: 0.52em;
+      font-weight: 400;
+      letter-spacing: -0.035em;
     }
 
     .intro {
-      max-width: 590px;
+      max-width: 620px;
       margin-bottom: 30px;
       color: var(--muted);
-      font-size: clamp(17px, 1.8vw, 20px);
-      line-height: 1.8;
+      font-size: clamp(17px, 1.65vw, 20px);
+      line-height: 1.82;
     }
 
-    .hero-actions {
+    .actions,
+    .social-mini {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 11px;
     }
 
     .button {
@@ -191,32 +283,54 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-      min-height: 51px;
+      min-height: 52px;
       padding: 0 22px;
       border: 1px solid var(--wine);
       border-radius: 999px;
       color: var(--white);
       background: var(--wine);
-      font-size: 14px;
-      font-weight: 800;
+      font-size: 13px;
+      font-weight: 850;
       transition: 0.22s ease;
     }
 
     .button:hover {
       transform: translateY(-2px);
-      box-shadow: 0 14px 30px rgba(84, 47, 56, 0.18);
+      box-shadow: 0 14px 30px rgba(75, 41, 50, 0.18);
     }
 
     .button.ghost { color: var(--wine); background: transparent; }
+    .button.light { color: var(--wine); border-color: var(--rose-2); background: var(--rose-2); }
+
+    .social-mini { margin-top: 28px; }
+
+    .social-mini a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .social-mini a::before {
+      content: "";
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--rose);
+    }
+
+    .social-mini a:hover { color: var(--wine); }
 
     .portrait-stage {
       position: relative;
       justify-self: end;
-      width: min(100%, 450px);
-      padding: 14px;
-      border: 1px solid rgba(201, 143, 154, 0.28);
-      border-radius: 220px 220px 24px 24px;
-      background: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(247,230,233,0.7));
+      width: min(100%, 445px);
+      padding: 13px;
+      border: 1px solid rgba(201, 130, 145, 0.28);
+      border-radius: 220px 220px 28px 28px;
+      background: linear-gradient(145deg, rgba(255,255,255,0.95), rgba(246,229,232,0.72));
       box-shadow: var(--shadow);
     }
 
@@ -224,62 +338,85 @@
       display: block;
       width: 100%;
       aspect-ratio: 0.78;
-      border-radius: 210px 210px 18px 18px;
+      border-radius: 210px 210px 21px 21px;
       object-fit: cover;
       object-position: 50% 27%;
-      filter: saturate(0.83) contrast(1.02);
+      filter: saturate(0.84) contrast(1.02);
     }
 
-    .monogram {
+    .seal {
       position: absolute;
-      top: 38px;
-      right: -40px;
+      top: 36px;
+      right: -42px;
       display: grid;
       place-items: center;
-      width: 104px;
-      height: 104px;
-      border: 1px solid rgba(84, 47, 56, 0.18);
+      width: 108px;
+      height: 108px;
+      border: 1px solid rgba(75, 41, 50, 0.16);
       border-radius: 50%;
       color: var(--wine);
-      background: rgba(255,250,248,0.92);
-      box-shadow: 0 16px 35px rgba(84, 47, 56, 0.12);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 34px;
-      font-style: italic;
+      background: rgba(255,250,248,0.94);
+      box-shadow: 0 16px 35px rgba(75, 41, 50, 0.12);
+      font-family: var(--serif);
+      text-align: center;
     }
+
+    .seal strong { display: block; font-size: 31px; font-style: italic; line-height: 1; }
+    .seal small { display: block; margin-top: 5px; font-family: var(--sans); font-size: 8px; font-weight: 900; letter-spacing: 0.16em; }
 
     .location-tag {
       position: absolute;
-      left: -48px;
+      left: -52px;
       bottom: 44px;
       padding: 13px 17px;
-      border: 1px solid rgba(84, 47, 56, 0.14);
+      border: 1px solid var(--line);
       border-radius: 14px;
       color: var(--wine);
-      background: rgba(255,255,255,0.94);
-      box-shadow: 0 16px 38px rgba(84, 47, 56, 0.13);
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 0.08em;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 16px 38px rgba(75, 41, 50, 0.13);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
     }
 
+    .proof-wrap { padding-bottom: 48px; }
+
+    .proof-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: rgba(255,255,255,0.62);
+      box-shadow: 0 14px 45px rgba(75, 41, 50, 0.06);
+      overflow: hidden;
+    }
+
+    .proof {
+      padding: 25px 26px;
+      border-right: 1px solid var(--line);
+    }
+
+    .proof:last-child { border-right: 0; }
+    .proof strong { display: block; font-family: var(--serif); font-size: 30px; font-weight: 400; line-height: 1.1; }
+    .proof span { color: var(--muted); font-size: 10px; font-weight: 900; letter-spacing: 0.14em; text-transform: uppercase; }
+
     section { padding: 105px 0; }
 
-    .editorial-section {
+    .tint-section {
       position: relative;
       background: var(--powder);
       overflow: hidden;
     }
 
-    .editorial-section::after {
-      content: "A";
+    .tint-section::after {
+      content: "✦";
       position: absolute;
-      right: -20px;
-      bottom: -170px;
-      color: rgba(201, 143, 154, 0.08);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 480px;
+      right: -35px;
+      bottom: -195px;
+      color: rgba(201, 130, 145, 0.08);
+      font-family: var(--serif);
+      font-size: 500px;
       line-height: 1;
       pointer-events: none;
     }
@@ -288,7 +425,7 @@
       position: relative;
       z-index: 1;
       display: grid;
-      grid-template-columns: 0.36fr 1fr;
+      grid-template-columns: 0.34fr 1fr;
       align-items: start;
       gap: 42px;
       margin-bottom: 54px;
@@ -296,125 +433,215 @@
 
     .section-index {
       color: var(--rose);
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 900;
       letter-spacing: 0.18em;
       text-transform: uppercase;
     }
 
     h2 {
-      margin-bottom: 16px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(42px, 5.2vw, 68px);
+      margin-bottom: 17px;
+      font-family: var(--serif);
+      font-size: clamp(44px, 5.4vw, 72px);
       font-weight: 400;
-      letter-spacing: -0.05em;
-      line-height: 1;
+      letter-spacing: -0.055em;
+      line-height: 0.98;
     }
 
     .section-copy {
-      max-width: 700px;
+      max-width: 720px;
       margin-bottom: 0;
       color: var(--muted);
       font-size: 18px;
       line-height: 1.8;
     }
 
-    .identity-grid {
+    .product-grid {
       position: relative;
       z-index: 1;
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr 0.85fr;
-      gap: 16px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
     }
 
-    .identity-card {
-      min-height: 250px;
+    .product-card {
+      min-height: 270px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 23px;
+      background: rgba(255,255,255,0.72);
+      transition: 0.24s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(201, 130, 145, 0.48);
+      box-shadow: 0 20px 48px rgba(75, 41, 50, 0.09);
+    }
+
+    .product-number {
+      display: grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      margin-bottom: 55px;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      color: var(--rose);
+      font-family: var(--serif);
+      font-style: italic;
+    }
+
+    .product-card h3,
+    .value-card h3,
+    .story-card h3 {
+      margin-bottom: 9px;
+      font-family: var(--serif);
+      font-size: 27px;
+      font-weight: 400;
+      letter-spacing: -0.025em;
+    }
+
+    .product-card p,
+    .value-card p,
+    .story-card p { margin-bottom: 0; color: var(--muted); }
+
+    .catalogue-cta {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      margin-top: 16px;
       padding: 30px;
+      border-radius: 23px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--wine), #724652);
+      overflow: hidden;
+    }
+
+    .catalogue-cta::after {
+      content: "30K+";
+      position: absolute;
+      right: 150px;
+      bottom: -45px;
+      color: rgba(255,255,255,0.08);
+      font-family: var(--serif);
+      font-size: 110px;
+      line-height: 1;
+    }
+
+    .catalogue-cta strong { display: block; font-family: var(--serif); font-size: 28px; font-weight: 400; }
+    .catalogue-cta p { position: relative; z-index: 1; margin: 5px 0 0; color: rgba(255,255,255,0.68); }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      align-items: start;
+      gap: clamp(44px, 8vw, 100px);
+    }
+
+    .about-statement {
+      position: sticky;
+      top: 135px;
+    }
+
+    .about-statement .eyebrow { margin-bottom: 20px; }
+    .about-statement h2 { max-width: 560px; }
+    .about-statement p { max-width: 570px; color: var(--muted); font-size: 18px; }
+
+    .signature {
+      margin-top: 24px;
+      color: var(--rose);
+      font-family: var(--serif);
+      font-size: 31px;
+      font-style: italic;
+    }
+
+    .value-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+    .value-card {
+      min-height: 235px;
+      padding: 28px;
       border: 1px solid var(--line);
       border-radius: 22px;
-      background: rgba(255,255,255,0.7);
-      transition: 0.22s ease;
+      background: rgba(255,255,255,0.65);
     }
 
-    .identity-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(201,143,154,0.45);
-      box-shadow: 0 18px 45px rgba(84,47,56,0.08);
+    .value-card:nth-child(1) { color: var(--white); background: var(--wine); }
+    .value-card:nth-child(1) p { color: rgba(255,255,255,0.68); }
+
+    .value-icon {
+      display: inline-flex;
+      margin-bottom: 48px;
+      color: var(--rose);
+      font-size: 21px;
     }
 
-    .identity-card.primary {
+    .manifesto {
+      position: relative;
+      padding: 88px 0;
       color: var(--white);
-      background: linear-gradient(145deg, var(--wine), #754752);
+      background:
+        radial-gradient(circle at 82% 22%, rgba(230, 183, 192, 0.2), transparent 22rem),
+        linear-gradient(135deg, #3f222a, #633945);
+      overflow: hidden;
     }
 
-    .tiny-label {
-      display: block;
-      margin-bottom: 64px;
-      color: var(--rose);
-      font-size: 11px;
-      font-weight: 900;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
+    .manifesto::after {
+      content: "A";
+      position: absolute;
+      right: 2vw;
+      bottom: -170px;
+      color: rgba(255,255,255,0.05);
+      font-family: var(--serif);
+      font-size: 450px;
+      font-style: italic;
+      line-height: 1;
     }
 
-    .primary .tiny-label { color: var(--rose-light); }
+    .manifesto-inner { position: relative; z-index: 1; max-width: 950px; }
+    .manifesto .section-index { margin-bottom: 25px; color: var(--rose-2); }
+    .manifesto blockquote { margin: 0; font-family: var(--serif); font-size: clamp(38px, 5.6vw, 74px); line-height: 1.06; letter-spacing: -0.05em; }
+    .manifesto p { max-width: 710px; margin: 25px 0 0; color: rgba(255,255,255,0.68); font-size: 18px; }
 
-    .identity-card h3 {
-      margin-bottom: 10px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 26px;
-      font-weight: 400;
-    }
-
-    .identity-card p { margin-bottom: 0; color: var(--muted); }
-    .identity-card.primary p { color: rgba(255,255,255,0.7); }
-
-    .timeline {
-      max-width: 940px;
-      margin-left: auto;
-    }
-
-    .timeline-item {
+    .story-grid {
       display: grid;
-      grid-template-columns: 180px 1fr;
-      gap: 36px;
-      padding: 34px 0;
-      border-top: 1px solid var(--line);
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
     }
 
-    .timeline-item:last-child { border-bottom: 1px solid var(--line); }
+    .story-card {
+      min-height: 290px;
+      padding: 30px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
 
-    .timeline-meta {
+    .story-meta {
+      display: block;
+      margin-bottom: 70px;
       color: var(--rose);
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 900;
       letter-spacing: 0.16em;
       text-transform: uppercase;
     }
 
-    .timeline-item h3 {
-      margin-bottom: 9px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 29px;
-      font-weight: 400;
-    }
-
-    .timeline-item p { max-width: 650px; margin-bottom: 0; color: var(--muted); font-size: 17px; }
-
-    .contact-section { padding-bottom: 72px; }
+    .contact-section { padding-bottom: 70px; }
 
     .contact-panel {
       position: relative;
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      align-items: center;
-      gap: 54px;
-      padding: clamp(42px, 6vw, 76px);
-      border-radius: 30px;
+      grid-template-columns: 1fr 0.94fr;
+      gap: 48px;
+      padding: clamp(40px, 6vw, 76px);
+      border-radius: 31px;
       color: var(--white);
       background:
-        radial-gradient(circle at 92% 12%, rgba(239,209,215,0.22), transparent 28%),
-        linear-gradient(135deg, #47262f, #6f414c);
+        radial-gradient(circle at 94% 10%, rgba(230,183,192,0.23), transparent 28%),
+        linear-gradient(135deg, #44242d, #71434f);
       box-shadow: var(--shadow);
       overflow: hidden;
     }
@@ -422,200 +649,360 @@
     .contact-panel::after {
       content: "✦";
       position: absolute;
-      right: 30px;
-      top: 15px;
-      color: rgba(255,255,255,0.13);
-      font-size: 110px;
+      right: 18px;
+      top: -28px;
+      color: rgba(255,255,255,0.09);
+      font-size: 150px;
     }
 
-    .contact-panel h2 { margin-bottom: 14px; }
-    .contact-panel p { max-width: 600px; margin-bottom: 0; color: rgba(255,255,255,0.68); font-size: 18px; }
+    .contact-panel .section-index { margin-bottom: 20px; color: var(--rose-2); }
+    .contact-panel h2 { margin-bottom: 16px; }
+    .contact-panel p { max-width: 580px; margin-bottom: 0; color: rgba(255,255,255,0.68); font-size: 18px; }
 
-    .contact-card {
+    .contact-stack {
       position: relative;
       z-index: 1;
-      padding: 26px;
-      border: 1px solid rgba(255,255,255,0.15);
-      border-radius: 22px;
-      background: rgba(255,255,255,0.075);
+      display: grid;
+      gap: 11px;
     }
 
-    .contact-card small {
-      display: block;
-      margin-bottom: 8px;
-      color: var(--rose-light);
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 17px 19px;
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.07);
+      transition: 0.2s ease;
+    }
+
+    .contact-detail:hover { transform: translateX(3px); background: rgba(255,255,255,0.11); }
+    .contact-detail small { display: block; color: var(--rose-2); font-size: 9px; font-weight: 900; letter-spacing: 0.15em; text-transform: uppercase; }
+    .contact-detail strong { display: block; margin-top: 3px; font-size: 14px; font-weight: 700; overflow-wrap: anywhere; }
+    .contact-detail b { color: var(--rose-2); font-size: 17px; }
+
+    .channel-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 3px;
+    }
+
+    .channel {
+      display: grid;
+      place-items: center;
+      min-height: 68px;
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.07);
       font-size: 11px;
-      font-weight: 900;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
+      font-weight: 850;
+      transition: 0.2s ease;
     }
 
-    .phone {
-      display: inline-block;
-      margin-bottom: 18px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(28px, 3vw, 40px);
-    }
-
-    .contact-card .button {
-      width: 100%;
-      color: var(--wine);
-      background: var(--rose-light);
-      border-color: var(--rose-light);
-    }
+    .channel:hover { transform: translateY(-2px); color: var(--wine); background: var(--rose-2); }
+    .contact-stack .button { width: 100%; margin-top: 3px; }
 
     footer {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
-      padding: 26px 0 44px;
+      gap: 22px;
+      padding: 26px 0 43px;
       color: var(--muted);
-      font-size: 13px;
+      font-size: 12px;
     }
 
-    footer a { color: var(--wine); font-weight: 800; }
+    footer strong { color: var(--wine); }
 
-    @media (max-width: 900px) {
-      .nav-links a:not(.contact-nav) { display: none; }
-      .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 82px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
+    .footer-links a:hover { color: var(--wine); }
+
+    .floating-wa {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 40;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 0 18px;
+      border: 1px solid rgba(255,255,255,0.65);
+      border-radius: 999px;
+      color: var(--white);
+      background: #1f9d61;
+      box-shadow: 0 14px 35px rgba(21, 113, 69, 0.25);
+      font-size: 12px;
+      font-weight: 900;
+      transition: 0.2s ease;
+    }
+
+    .floating-wa:hover { transform: translateY(-2px); box-shadow: 0 18px 40px rgba(21, 113, 69, 0.32); }
+
+    .js [data-reveal] {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .js [data-reveal].visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 960px) {
+      .nav-links { display: none; }
+      .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 86px; }
       .portrait-stage { justify-self: center; }
+      .proof-bar { grid-template-columns: 1fr 1fr; }
+      .proof:nth-child(2) { border-right: 0; }
+      .proof:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
       .section-head { grid-template-columns: 1fr; gap: 14px; }
-      .identity-grid { grid-template-columns: 1fr; }
+      .product-grid { grid-template-columns: 1fr 1fr; }
+      .about-layout { grid-template-columns: 1fr; }
+      .about-statement { position: static; }
+      .story-grid { grid-template-columns: 1fr; }
+      .story-card { min-height: 0; }
+      .story-meta { margin-bottom: 34px; }
       .contact-panel { grid-template-columns: 1fr; }
     }
 
-    @media (max-width: 580px) {
+    @media (max-width: 620px) {
       .container { width: min(100% - 26px, 1180px); }
-      .topbar { top: 7px; padding-top: 7px; }
-      nav { padding: 9px 9px 9px 17px; }
-      h1 { font-size: clamp(62px, 20vw, 90px); }
-      .hero-actions .button { width: 100%; }
-      .portrait-stage { width: calc(100% - 20px); }
-      .monogram { right: -10px; width: 82px; height: 82px; font-size: 28px; }
-      .location-tag { left: -10px; }
+      .topbar { top: 6px; padding-top: 6px; }
+      nav { padding: 8px; }
+      .brand-copy strong { font-size: 15px; }
+      .brand-copy small { font-size: 8px; }
+      .contact-nav { display: none; }
+      h1 { font-size: clamp(61px, 20vw, 89px); }
+      .actions .button { width: 100%; }
+      .portrait-stage { width: calc(100% - 18px); }
+      .seal { right: -8px; width: 84px; height: 84px; }
+      .seal strong { font-size: 25px; }
+      .location-tag { left: -8px; }
+      .proof { padding: 21px 18px; }
+      .proof strong { font-size: 26px; }
       section { padding: 78px 0; }
-      .timeline-item { grid-template-columns: 1fr; gap: 10px; }
-      .contact-panel { padding: 36px 24px; }
-      footer { flex-direction: column; align-items: flex-start; }
+      .product-grid,
+      .value-grid { grid-template-columns: 1fr; }
+      .product-card { min-height: 235px; }
+      .product-number { margin-bottom: 35px; }
+      .catalogue-cta { align-items: flex-start; flex-direction: column; }
+      .catalogue-cta .button { width: 100%; }
+      .contact-panel { padding: 36px 22px; }
+      .contact-detail { align-items: flex-start; }
+      .channel-grid { grid-template-columns: 1fr; }
+      footer { align-items: flex-start; flex-direction: column; padding-bottom: 92px; }
+      .floating-wa span:last-child { display: none; }
+      .floating-wa { width: 52px; padding: 0; justify-content: center; font-size: 18px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
     }
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main" data-en="Skip to content" data-zh="跳到主要内容">Skip to content</a>
+
   <header class="topbar container">
     <nav aria-label="Main navigation">
-      <a class="logo" href="#home">Airel</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a class="contact-nav" href="#contact">Contact</a>
+      <a class="brand" href="#home" aria-label="Guardian Angel home">
+        <span class="brand-mark" aria-hidden="true">GA</span>
+        <span class="brand-copy">
+          <strong>Guardian Angel</strong>
+          <small>Wholesale by Airel</small>
+        </span>
+      </a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#products" data-en="Products" data-zh="产品">Products</a>
+          <a href="#about" data-en="Why us" data-zh="我们的优势">Why us</a>
+          <a href="#story" data-en="Story" data-zh="品牌故事">Story</a>
+        </div>
+        <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">
+          <span id="languageLabel">中文</span>
+        </button>
+        <a class="contact-nav" href="#contact" data-en="Contact" data-zh="联系">Contact</a>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero container" id="home">
-      <div>
-        <p class="overline">Kuala Lumpur · Singapore</p>
-        <h1>Airel<span>Commerce with perspective.</span></h1>
-        <p class="intro">
-          I manage a global wholesale online store, connecting customers,
-          products and opportunities across international markets.
+      <div data-reveal>
+        <p class="eyebrow" data-en="Guardian Angel · KL / Singapore" data-zh="Guardian Angel · 吉隆坡 / 新加坡">Guardian Angel · KL / Singapore</p>
+        <h1>
+          <span data-en="Wholesale," data-zh="全球批发，">Wholesale,</span>
+          <em data-en="made personal." data-zh="更懂你的需要。">made personal.</em>
+        </h1>
+        <p class="intro" data-en="Discover 30,000+ products across fashion, fishing, technology, protection and office essentials — supported by six years of online wholesale experience." data-zh="探索超过 30,000 种商品，涵盖服装、休闲渔具、手机配件、防护用品与办公文具，由六年在线批发经验为你提供支持。">
+          Discover 30,000+ products across fashion, fishing, technology, protection and office essentials — supported by six years of online wholesale experience.
         </p>
-        <div class="hero-actions">
-          <a class="button" href="#experience">Explore my journey <span>↘</span></a>
-          <a class="button ghost" href="#contact">Let's connect</a>
+        <div class="actions">
+          <a class="button" href="https://mhzahuikoe.top/" target="_blank" rel="noopener noreferrer">
+            <span data-en="Explore the catalogue" data-zh="浏览在线商店">Explore the catalogue</span><span aria-hidden="true">↗</span>
+          </a>
+          <a class="button ghost" href="https://wa.me/6584404715?text=Hello%20Airel%2C%20I%20found%20Guardian%20Angel%20through%20your%20website%20and%20would%20like%20to%20ask%20about%20wholesale%20products." target="_blank" rel="noopener noreferrer">
+            <span data-en="Talk to Airel" data-zh="WhatsApp 联系 Airel">Talk to Airel</span>
+          </a>
+        </div>
+        <div class="social-mini" aria-label="Social links">
+          <a href="https://www.instagram.com/drab881231/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/dee.brennan.773" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="mailto:RodriguesHayley638@gmail.com">Email</a>
         </div>
       </div>
 
-      <div class="portrait-stage">
-        <img class="portrait" src="profile.jpg" alt="Portrait of Airel">
-        <div class="monogram" aria-hidden="true">A</div>
-        <div class="location-tag">Based in KL / SG</div>
+      <div class="portrait-stage" data-reveal>
+        <img class="portrait" src="profile.jpg" alt="Portrait of Airel" width="865" height="1110">
+        <div class="seal" aria-hidden="true"><span><strong>GA</strong><small>SINCE 6Y</small></span></div>
+        <div class="location-tag" data-en="Worldwide service" data-zh="服务全球">Worldwide service</div>
       </div>
     </section>
 
-    <section class="editorial-section" id="about">
+    <div class="proof-wrap container" data-reveal>
+      <div class="proof-bar" aria-label="Business highlights">
+        <div class="proof"><strong>30K+</strong><span data-en="Products" data-zh="商品选择">Products</span></div>
+        <div class="proof"><strong>6</strong><span data-en="Years online" data-zh="年在线经验">Years online</span></div>
+        <div class="proof"><strong>Global</strong><span data-en="Service reach" data-zh="服务范围">Service reach</span></div>
+        <div class="proof"><strong>KL / SG</strong><span data-en="Our base" data-zh="我们的所在地">Our base</span></div>
+      </div>
+    </div>
+
+    <section class="tint-section" id="products">
       <div class="container">
-        <div class="section-head">
-          <div class="section-index">01 · Profile</div>
+        <div class="section-head" data-reveal>
+          <div class="section-index" data-en="01 · Catalogue" data-zh="01 · 商品目录">01 · Catalogue</div>
           <div>
-            <h2>Quiet confidence.<br>Global perspective.</h2>
-            <p class="section-copy">
-              My work is shaped by international e-commerce and professional
-              experience in Singapore. I value clarity, consistency and
-              relationships that create lasting value.
+            <h2><span data-en="More choice." data-zh="更多选择，">More choice.</span><br><span data-en="More possibility." data-zh="更多可能。">More possibility.</span></h2>
+            <p class="section-copy" data-en="From everyday essentials to fast-moving lifestyle categories, Guardian Angel brings a broad wholesale catalogue together in one place." data-zh="从日常必需品到热门生活品类，Guardian Angel 将丰富的批发商品集中在一个平台。">
+              From everyday essentials to fast-moving lifestyle categories, Guardian Angel brings a broad wholesale catalogue together in one place.
             </p>
           </div>
         </div>
 
-        <div class="identity-grid">
-          <article class="identity-card primary">
-            <span class="tiny-label">What I do</span>
-            <h3>Global Wholesale</h3>
-            <p>Operating an online wholesale store serving customers across different markets.</p>
+        <div class="product-grid">
+          <article class="product-card" data-reveal>
+            <span class="product-number">01</span>
+            <h3 data-en="Menswear" data-zh="男士服装">Menswear</h3>
+            <p data-en="Everyday styles and versatile clothing selections for modern wardrobes." data-zh="适合现代衣橱的日常款式与多样服装选择。">Everyday styles and versatile clothing selections for modern wardrobes.</p>
           </article>
-          <article class="identity-card">
-            <span class="tiny-label">Where</span>
-            <h3>KL / Singapore</h3>
-            <p>Connected to two dynamic cities with an international outlook.</p>
+          <article class="product-card" data-reveal>
+            <span class="product-number">02</span>
+            <h3 data-en="Womenswear" data-zh="女士服装">Womenswear</h3>
+            <p data-en="Fashion-led pieces and easy-to-wear essentials across multiple styles." data-zh="涵盖多种风格的时尚单品与百搭日常服饰。">Fashion-led pieces and easy-to-wear essentials across multiple styles.</p>
           </article>
-          <article class="identity-card">
-            <span class="tiny-label">Approach</span>
-            <h3>Long-term Value</h3>
-            <p>Practical decisions, reliable service and meaningful connections.</p>
+          <article class="product-card" data-reveal>
+            <span class="product-number">03</span>
+            <h3 data-en="Recreational Fishing" data-zh="休闲渔具">Recreational Fishing</h3>
+            <p data-en="Practical accessories and equipment for leisure fishing enthusiasts." data-zh="为休闲钓鱼爱好者提供实用配件与装备。">Practical accessories and equipment for leisure fishing enthusiasts.</p>
+          </article>
+          <article class="product-card" data-reveal>
+            <span class="product-number">04</span>
+            <h3 data-en="Mobile Accessories" data-zh="手机配件">Mobile Accessories</h3>
+            <p data-en="Useful technology accessories for connected, everyday living." data-zh="满足日常数码生活需求的实用手机配件。">Useful technology accessories for connected, everyday living.</p>
+          </article>
+          <article class="product-card" data-reveal>
+            <span class="product-number">05</span>
+            <h3 data-en="Health & Protection" data-zh="防护用品">Health &amp; Protection</h3>
+            <p data-en="Everyday protection supplies selected for practical use." data-zh="适合日常使用的实用防护用品。">Everyday protection supplies selected for practical use.</p>
+          </article>
+          <article class="product-card" data-reveal>
+            <span class="product-number">06</span>
+            <h3 data-en="Office Stationery" data-zh="办公文具">Office Stationery</h3>
+            <p data-en="Workplace and stationery essentials for business and personal needs." data-zh="满足商务与个人需要的办公和文具用品。">Workplace and stationery essentials for business and personal needs.</p>
+          </article>
+        </div>
+
+        <div class="catalogue-cta" data-reveal>
+          <div>
+            <strong data-en="And thousands more to discover." data-zh="还有数万种商品等待探索。">And thousands more to discover.</strong>
+            <p data-en="Visit the online store or ask Airel for a suitable product direction." data-zh="进入在线商店，或联系 Airel 咨询适合你的商品方向。">Visit the online store or ask Airel for a suitable product direction.</p>
+          </div>
+          <a class="button light" href="https://mhzahuikoe.top/" target="_blank" rel="noopener noreferrer">
+            <span data-en="Visit online store" data-zh="进入在线商店">Visit online store</span><span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-layout">
+        <div class="about-statement" data-reveal>
+          <p class="eyebrow" data-en="Why Guardian Angel" data-zh="为什么选择 Guardian Angel">Why Guardian Angel</p>
+          <h2><span data-en="A broad catalogue," data-zh="丰富目录，">A broad catalogue,</span><br><span data-en="with a human touch." data-zh="用心服务。">with a human touch.</span></h2>
+          <p data-en="Wholesale should feel clear, approachable and connected. Guardian Angel combines wide product access with direct communication, helping buyers move from an idea to the next practical step." data-zh="批发采购也可以清晰、简单并且有人情味。Guardian Angel 将丰富的商品选择与直接沟通结合，帮助买家把需求变成可执行的下一步。">
+            Wholesale should feel clear, approachable and connected. Guardian Angel combines wide product access with direct communication, helping buyers move from an idea to the next practical step.
+          </p>
+          <div class="signature">Airel</div>
+        </div>
+
+        <div class="value-grid">
+          <article class="value-card" data-reveal>
+            <span class="value-icon" aria-hidden="true">✦</span>
+            <h3 data-en="Wide selection" data-zh="丰富选择">Wide selection</h3>
+            <p data-en="30,000+ products across practical, lifestyle and fast-moving categories." data-zh="超过 30,000 种商品，覆盖实用、生活与热门品类。">30,000+ products across practical, lifestyle and fast-moving categories.</p>
+          </article>
+          <article class="value-card" data-reveal>
+            <span class="value-icon" aria-hidden="true">↗</span>
+            <h3 data-en="Global outlook" data-zh="全球视野">Global outlook</h3>
+            <p data-en="Based between KL and Singapore, serving enquiries from around the world." data-zh="立足吉隆坡与新加坡，为全球客户提供咨询服务。">Based between KL and Singapore, serving enquiries from around the world.</p>
+          </article>
+          <article class="value-card" data-reveal>
+            <span class="value-icon" aria-hidden="true">06</span>
+            <h3 data-en="Proven experience" data-zh="经验积累">Proven experience</h3>
+            <p data-en="Six years of online wholesale experience and practical market understanding." data-zh="六年在线批发经验，了解实际市场需求。">Six years of online wholesale experience and practical market understanding.</p>
+          </article>
+          <article class="value-card" data-reveal>
+            <span class="value-icon" aria-hidden="true">◎</span>
+            <h3 data-en="Direct contact" data-zh="直接沟通">Direct contact</h3>
+            <p data-en="Speak directly with Airel through WhatsApp, email or social platforms." data-zh="可以通过 WhatsApp、电子邮件或社交平台直接联系 Airel。">Speak directly with Airel through WhatsApp, email or social platforms.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="experience">
-      <div class="container">
-        <div class="section-head">
-          <div class="section-index">02 · Experience</div>
-          <div>
-            <h2>A journey built<br>through experience.</h2>
-            <p class="section-copy">From Singapore's professional environment to building an online business with global reach.</p>
-          </div>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-meta">Present</div>
-            <div>
-              <h3>Global Wholesale Online Store</h3>
-              <p>Managing wholesale operations, supplier coordination, customer communication and online growth across international markets.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-meta">Singapore</div>
-            <div>
-              <h3>Professional Experience</h3>
-              <p>Developed practical working experience in Singapore's fast-moving and globally connected business environment.</p>
-            </div>
-          </article>
-        </div>
+    <section class="manifesto">
+      <div class="container manifesto-inner" data-reveal>
+        <div class="section-index" data-en="A simpler way forward" data-zh="更简单的开始">A simpler way forward</div>
+        <blockquote data-en="Less marketplace complexity. More time focused on the products that matter." data-zh="少一点平台流程的复杂，多一点对合适商品的专注。">
+          Less marketplace complexity. More time focused on the products that matter.
+        </blockquote>
+        <p data-en="Tell us what you are looking for. We help you explore the catalogue and understand the next step without making you navigate the sourcing journey alone." data-zh="告诉我们你正在寻找什么，我们会帮助你探索商品目录、了解下一步，让采购过程不再孤立无援。">
+          Tell us what you are looking for. We help you explore the catalogue and understand the next step without making you navigate the sourcing journey alone.
+        </p>
       </div>
     </section>
 
-    <section class="editorial-section" id="education">
+    <section class="tint-section" id="story">
       <div class="container">
-        <div class="section-head">
-          <div class="section-index">03 · Education</div>
+        <div class="section-head" data-reveal>
+          <div class="section-index" data-en="02 · The story" data-zh="02 · 品牌故事">02 · The story</div>
           <div>
-            <h2>The foundation<br>behind the journey.</h2>
-            <p class="section-copy">Completed my university studies at SEGi University in Malaysia.</p>
+            <h2><span data-en="Experience behind" data-zh="经验成就">Experience behind</span><br><span data-en="every connection." data-zh="每一次连接。">every connection.</span></h2>
+            <p class="section-copy" data-en="Guardian Angel is shaped by Airel's international experience, entrepreneurial journey and belief in clear, lasting business relationships." data-zh="Guardian Angel 源自 Airel 的国际工作经验、创业历程，以及对清晰和长期商业关系的重视。">
+              Guardian Angel is shaped by Airel's international experience, entrepreneurial journey and belief in clear, lasting business relationships.
+            </p>
           </div>
         </div>
 
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-meta">Malaysia</div>
-            <div>
-              <h3>SEGi University</h3>
-              <p>University education that provided the foundation for my professional and entrepreneurial journey.</p>
-            </div>
+        <div class="story-grid">
+          <article class="story-card" data-reveal>
+            <span class="story-meta" data-en="Present · 6 years" data-zh="现在 · 6年">Present · 6 years</span>
+            <h3 data-en="Global Wholesale" data-zh="全球在线批发">Global Wholesale</h3>
+            <p data-en="Operating Guardian Angel with a catalogue of more than 30,000 products and worldwide service ambitions." data-zh="经营 Guardian Angel，拥有超过 30,000 种商品，并以服务全球客户为目标。">Operating Guardian Angel with a catalogue of more than 30,000 products and worldwide service ambitions.</p>
+          </article>
+          <article class="story-card" data-reveal>
+            <span class="story-meta" data-en="Professional experience" data-zh="工作经历">Professional experience</span>
+            <h3 data-en="Singapore" data-zh="新加坡">Singapore</h3>
+            <p data-en="Practical experience developed in Singapore's fast-moving, globally connected business environment." data-zh="在新加坡快速且国际化的商业环境中积累实际工作经验。">Practical experience developed in Singapore's fast-moving, globally connected business environment.</p>
+          </article>
+          <article class="story-card" data-reveal>
+            <span class="story-meta" data-en="Education · Malaysia" data-zh="教育 · 马来西亚">Education · Malaysia</span>
+            <h3>SEGi University</h3>
+            <p data-en="University education that built the foundation for Airel's professional and entrepreneurial path." data-zh="大学教育为 Airel 的职业发展与创业道路奠定基础。">University education that built the foundation for Airel's professional and entrepreneurial path.</p>
           </article>
         </div>
       </div>
@@ -623,16 +1010,30 @@
 
     <section class="contact-section" id="contact">
       <div class="container">
-        <div class="contact-panel">
+        <div class="contact-panel" data-reveal>
           <div>
-            <div class="section-index" style="color: var(--rose-light);">04 · Contact</div>
-            <h2>Let's begin a<br>conversation.</h2>
-            <p>For professional networking, business conversations and new opportunities.</p>
+            <div class="section-index" data-en="03 · Contact" data-zh="03 · 联系我们">03 · Contact</div>
+            <h2><span data-en="Start with" data-zh="从一次">Start with</span><br><span data-en="a conversation." data-zh="沟通开始。">a conversation.</span></h2>
+            <p data-en="Ask about products, wholesale opportunities or a category you would like to explore. Airel is available through WhatsApp, phone, email and social platforms." data-zh="欢迎咨询商品、批发机会或你感兴趣的品类。你可以通过 WhatsApp、电话、电子邮件或社交平台联系 Airel。">
+              Ask about products, wholesale opportunities or a category you would like to explore. Airel is available through WhatsApp, phone, email and social platforms.
+            </p>
           </div>
-          <div class="contact-card">
-            <small>WhatsApp / Phone</small>
-            <a class="phone" href="tel:+6584404715">+65 8440 4715</a>
-            <a class="button" href="https://wa.me/6584404715?text=Hello%20Airel%2C%20I%20visited%20your%20website." target="_blank" rel="noopener noreferrer">Chat on WhatsApp <span>→</span></a>
+
+          <div class="contact-stack">
+            <a class="contact-detail" href="tel:+6584404715">
+              <span><small data-en="WhatsApp / Phone" data-zh="WhatsApp / 电话">WhatsApp / Phone</small><strong>+65 8440 4715</strong></span><b aria-hidden="true">↗</b>
+            </a>
+            <a class="contact-detail" href="mailto:RodriguesHayley638@gmail.com">
+              <span><small data-en="Email" data-zh="电子邮件">Email</small><strong>RodriguesHayley638@gmail.com</strong></span><b aria-hidden="true">↗</b>
+            </a>
+            <div class="channel-grid" aria-label="Business channels">
+              <a class="channel" href="https://mhzahuikoe.top/" target="_blank" rel="noopener noreferrer" data-en="Online store ↗" data-zh="在线商店 ↗">Online store ↗</a>
+              <a class="channel" href="https://www.instagram.com/drab881231/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+              <a class="channel" href="https://www.facebook.com/dee.brennan.773" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+            </div>
+            <a class="button light" href="https://wa.me/6584404715?text=Hello%20Airel%2C%20I%20found%20Guardian%20Angel%20through%20your%20website%20and%20would%20like%20to%20ask%20about%20wholesale%20products." target="_blank" rel="noopener noreferrer">
+              <span data-en="Chat on WhatsApp" data-zh="WhatsApp 立即咨询">Chat on WhatsApp</span><span aria-hidden="true">→</span>
+            </a>
           </div>
         </div>
       </div>
@@ -640,12 +1041,66 @@
   </main>
 
   <footer class="container">
-    <span>© <span id="year"></span> Airel. All rights reserved.</span>
-    <a href="#home">Back to top ↑</a>
+    <div>
+      <strong>Guardian Angel</strong><br>
+      <span>© <span id="year"></span> Airel. <span data-en="Product availability and terms may vary." data-zh="商品供应与条款可能调整。">Product availability and terms may vary.</span></span>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/drab881231/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.facebook.com/dee.brennan.773" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="#home" data-en="Back to top ↑" data-zh="返回顶部 ↑">Back to top ↑</a>
+    </div>
   </footer>
 
+  <a class="floating-wa" href="https://wa.me/6584404715?text=Hello%20Airel%2C%20I%20found%20Guardian%20Angel%20through%20your%20website%20and%20would%20like%20to%20ask%20about%20wholesale%20products." target="_blank" rel="noopener noreferrer" aria-label="Chat with Airel on WhatsApp">
+    <span aria-hidden="true">✆</span><span>WhatsApp</span>
+  </a>
+
   <script>
+    const languageToggle = document.getElementById('languageToggle');
+    const languageLabel = document.getElementById('languageLabel');
+    const translatedElements = document.querySelectorAll('[data-en][data-zh]');
+
+    function setLanguage(language) {
+      const lang = language === 'zh' ? 'zh' : 'en';
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+      translatedElements.forEach((element) => {
+        element.textContent = element.dataset[lang];
+      });
+      languageLabel.textContent = lang === 'zh' ? 'EN' : '中文';
+      languageToggle.setAttribute('aria-label', lang === 'zh' ? 'Switch to English' : '切换到中文');
+      document.title = lang === 'zh'
+        ? 'Guardian Angel｜Airel 全球批发'
+        : 'Guardian Angel | Global Wholesale by Airel';
+      localStorage.setItem('guardian-angel-language', lang);
+    }
+
+    const savedLanguage = localStorage.getItem('guardian-angel-language');
+    const browserLanguage = navigator.language && navigator.language.toLowerCase().startsWith('zh') ? 'zh' : 'en';
+    let currentLanguage = savedLanguage || browserLanguage;
+    setLanguage(currentLanguage);
+
+    languageToggle.addEventListener('click', () => {
+      currentLanguage = document.documentElement.lang.startsWith('zh') ? 'en' : 'zh';
+      setLanguage(currentLanguage);
+    });
+
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const revealItems = document.querySelectorAll('[data-reveal]');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealItems.forEach((item) => observer.observe(item));
+    } else {
+      revealItems.forEach((item) => item.classList.add('visible'));
+    }
   </script>
 </body>
 </html>
