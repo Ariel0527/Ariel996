@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Airel's personal website — global wholesale e-commerce, education and professional experience.">
+  <meta name="theme-color" content="#f4dfe3">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Airel | Global Wholesale E-commerce">
+  <meta property="og:description" content="Based between Kuala Lumpur and Singapore, building connections through global wholesale e-commerce.">
+  <meta property="og:url" content="https://ariel0527.github.io/Ariel996/">
+  <meta property="og:image" content="https://ariel0527.github.io/Ariel996/social-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Airel — Global Wholesale E-commerce">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Airel | Global Wholesale E-commerce">
+  <meta name="twitter:description" content="Based between Kuala Lumpur and Singapore, building connections through global wholesale e-commerce.">
+  <meta name="twitter:image" content="https://ariel0527.github.io/Ariel996/social-preview.jpg">
+  <title>Airel | Global Wholesale E-commerce</title>
+  <style>
+    :root {
+      --wine: #542f38;
+      --wine-soft: #754952;
+      --rose: #c98f9a;
+      --rose-light: #efd1d7;
+      --blush: #f7e6e9;
+      --powder: #fbf1f2;
+      --cream: #fffaf8;
+      --white: #ffffff;
+      --ink: #382d30;
+      --muted: #7e6c70;
+      --line: rgba(84, 47, 56, 0.14);
+      --shadow: 0 30px 90px rgba(84, 47, 56, 0.14);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--cream);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: min(1180px, calc(100% - 44px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 14px;
+      z-index: 20;
+      padding-top: 14px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      padding: 11px 12px 11px 24px;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 999px;
+      background: rgba(255, 250, 248, 0.84);
+      box-shadow: 0 15px 50px rgba(84, 47, 56, 0.09);
+      backdrop-filter: blur(18px);
+    }
+
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 25px;
+      font-style: italic;
+      font-weight: 500;
+      letter-spacing: -0.03em;
+    }
+
+    .logo::after { content: "."; color: var(--rose); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .nav-links a {
+      padding: 9px 14px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .nav-links a:hover { color: var(--wine); background: var(--blush); }
+
+    .nav-links .contact-nav {
+      padding: 10px 18px;
+      color: var(--white);
+      background: var(--wine);
+    }
+
+    .hero {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+      gap: clamp(50px, 8vw, 112px);
+      min-height: calc(100vh - 72px);
+      padding: 68px 0 88px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 540px;
+      height: 540px;
+      left: -330px;
+      top: -110px;
+      border: 1px solid rgba(201, 143, 154, 0.28);
+      border-radius: 50%;
+    }
+
+    .overline {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 26px;
+      color: var(--wine-soft);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .overline::before {
+      content: "";
+      width: 44px;
+      height: 1px;
+      background: var(--rose);
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1 {
+      max-width: 670px;
+      margin-bottom: 26px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(64px, 8.2vw, 112px);
+      font-weight: 400;
+      letter-spacing: -0.065em;
+      line-height: 0.86;
+    }
+
+    h1 span {
+      display: block;
+      margin-top: 18px;
+      color: var(--rose);
+      font-size: 0.5em;
+      font-style: italic;
+      letter-spacing: -0.04em;
+    }
+
+    .intro {
+      max-width: 590px;
+      margin-bottom: 30px;
+      color: var(--muted);
+      font-size: clamp(17px, 1.8vw, 20px);
+      line-height: 1.8;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 51px;
+      padding: 0 22px;
+      border: 1px solid var(--wine);
+      border-radius: 999px;
+      color: var(--white);
+      background: var(--wine);
+      font-size: 14px;
+      font-weight: 800;
+      transition: 0.22s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(84, 47, 56, 0.18);
+    }
+
+    .button.ghost { color: var(--wine); background: transparent; }
+
+    .portrait-stage {
+      position: relative;
+      justify-self: end;
+      width: min(100%, 450px);
+      padding: 14px;
+      border: 1px solid rgba(201, 143, 154, 0.28);
+      border-radius: 220px 220px 24px 24px;
+      background: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(247,230,233,0.7));
+      box-shadow: var(--shadow);
+    }
+
+    .portrait {
+      display: block;
+      width: 100%;
+      aspect-ratio: 0.78;
+      border-radius: 210px 210px 18px 18px;
+      object-fit: cover;
+      object-position: 50% 27%;
+      filter: saturate(0.83) contrast(1.02);
+    }
+
+    .monogram {
+      position: absolute;
+      top: 38px;
+      right: -40px;
+      display: grid;
+      place-items: center;
+      width: 104px;
+      height: 104px;
+      border: 1px solid rgba(84, 47, 56, 0.18);
+      border-radius: 50%;
+      color: var(--wine);
+      background: rgba(255,250,248,0.92);
+      box-shadow: 0 16px 35px rgba(84, 47, 56, 0.12);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
+      font-style: italic;
+    }
+
+    .location-tag {
+      position: absolute;
+      left: -48px;
+      bottom: 44px;
+      padding: 13px 17px;
+      border: 1px solid rgba(84, 47, 56, 0.14);
+      border-radius: 14px;
+      color: var(--wine);
+      background: rgba(255,255,255,0.94);
+      box-shadow: 0 16px 38px rgba(84, 47, 56, 0.13);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    section { padding: 105px 0; }
+
+    .editorial-section {
+      position: relative;
+      background: var(--powder);
+      overflow: hidden;
+    }
+
+    .editorial-section::after {
+      content: "A";
+      position: absolute;
+      right: -20px;
+      bottom: -170px;
+      color: rgba(201, 143, 154, 0.08);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 480px;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .section-head {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 0.36fr 1fr;
+      align-items: start;
+      gap: 42px;
+      margin-bottom: 54px;
+    }
+
+    .section-index {
+      color: var(--rose);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin-bottom: 16px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 5.2vw, 68px);
+      font-weight: 400;
+      letter-spacing: -0.05em;
+      line-height: 1;
+    }
+
+    .section-copy {
+      max-width: 700px;
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .identity-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr 0.85fr;
+      gap: 16px;
+    }
+
+    .identity-card {
+      min-height: 250px;
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(255,255,255,0.7);
+      transition: 0.22s ease;
+    }
+
+    .identity-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(201,143,154,0.45);
+      box-shadow: 0 18px 45px rgba(84,47,56,0.08);
+    }
+
+    .identity-card.primary {
+      color: var(--white);
+      background: linear-gradient(145deg, var(--wine), #754752);
+    }
+
+    .tiny-label {
+      display: block;
+      margin-bottom: 64px;
+      color: var(--rose);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .primary .tiny-label { color: var(--rose-light); }
+
+    .identity-card h3 {
+      margin-bottom: 10px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 26px;
+      font-weight: 400;
+    }
+
+    .identity-card p { margin-bottom: 0; color: var(--muted); }
+    .identity-card.primary p { color: rgba(255,255,255,0.7); }
+
+    .timeline {
+      max-width: 940px;
+      margin-left: auto;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 36px;
+      padding: 34px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .timeline-item:last-child { border-bottom: 1px solid var(--line); }
+
+    .timeline-meta {
+      color: var(--rose);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .timeline-item h3 {
+      margin-bottom: 9px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 29px;
+      font-weight: 400;
+    }
+
+    .timeline-item p { max-width: 650px; margin-bottom: 0; color: var(--muted); font-size: 17px; }
+
+    .contact-section { padding-bottom: 72px; }
+
+    .contact-panel {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: 54px;
+      padding: clamp(42px, 6vw, 76px);
+      border-radius: 30px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 92% 12%, rgba(239,209,215,0.22), transparent 28%),
+        linear-gradient(135deg, #47262f, #6f414c);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .contact-panel::after {
+      content: "✦";
+      position: absolute;
+      right: 30px;
+      top: 15px;
+      color: rgba(255,255,255,0.13);
+      font-size: 110px;
+    }
+
+    .contact-panel h2 { margin-bottom: 14px; }
+    .contact-panel p { max-width: 600px; margin-bottom: 0; color: rgba(255,255,255,0.68); font-size: 18px; }
+
+    .contact-card {
+      position: relative;
+      z-index: 1;
+      padding: 26px;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 22px;
+      background: rgba(255,255,255,0.075);
+    }
+
+    .contact-card small {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--rose-light);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .phone {
+      display: inline-block;
+      margin-bottom: 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(28px, 3vw, 40px);
+    }
+
+    .contact-card .button {
+      width: 100%;
+      color: var(--wine);
+      background: var(--rose-light);
+      border-color: var(--rose-light);
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 26px 0 44px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--wine); font-weight: 800; }
+
+    @media (max-width: 900px) {
+      .nav-links a:not(.contact-nav) { display: none; }
+      .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 82px; }
+      .portrait-stage { justify-self: center; }
+      .section-head { grid-template-columns: 1fr; gap: 14px; }
+      .identity-grid { grid-template-columns: 1fr; }
+      .contact-panel { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 580px) {
+      .container { width: min(100% - 26px, 1180px); }
+      .topbar { top: 7px; padding-top: 7px; }
+      nav { padding: 9px 9px 9px 17px; }
+      h1 { font-size: clamp(62px, 20vw, 90px); }
+      .hero-actions .button { width: 100%; }
+      .portrait-stage { width: calc(100% - 20px); }
+      .monogram { right: -10px; width: 82px; height: 82px; font-size: 28px; }
+      .location-tag { left: -10px; }
+      section { padding: 78px 0; }
+      .timeline-item { grid-template-columns: 1fr; gap: 10px; }
+      .contact-panel { padding: 36px 24px; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar container">
+    <nav aria-label="Main navigation">
+      <a class="logo" href="#home">Airel</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a class="contact-nav" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div>
+        <p class="overline">Kuala Lumpur · Singapore</p>
+        <h1>Airel<span>Commerce with perspective.</span></h1>
+        <p class="intro">
+          I manage a global wholesale online store, connecting customers,
+          products and opportunities across international markets.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#experience">Explore my journey <span>↘</span></a>
+          <a class="button ghost" href="#contact">Let's connect</a>
+        </div>
+      </div>
+
+      <div class="portrait-stage">
+        <img class="portrait" src="profile.jpg" alt="Portrait of Airel">
+        <div class="monogram" aria-hidden="true">A</div>
+        <div class="location-tag">Based in KL / SG</div>
+      </div>
+    </section>
+
+    <section class="editorial-section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-index">01 · Profile</div>
+          <div>
+            <h2>Quiet confidence.<br>Global perspective.</h2>
+            <p class="section-copy">
+              My work is shaped by international e-commerce and professional
+              experience in Singapore. I value clarity, consistency and
+              relationships that create lasting value.
+            </p>
+          </div>
+        </div>
+
+        <div class="identity-grid">
+          <article class="identity-card primary">
+            <span class="tiny-label">What I do</span>
+            <h3>Global Wholesale</h3>
+            <p>Operating an online wholesale store serving customers across different markets.</p>
+          </article>
+          <article class="identity-card">
+            <span class="tiny-label">Where</span>
+            <h3>KL / Singapore</h3>
+            <p>Connected to two dynamic cities with an international outlook.</p>
+          </article>
+          <article class="identity-card">
+            <span class="tiny-label">Approach</span>
+            <h3>Long-term Value</h3>
+            <p>Practical decisions, reliable service and meaningful connections.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-index">02 · Experience</div>
+          <div>
+            <h2>A journey built<br>through experience.</h2>
+            <p class="section-copy">From Singapore's professional environment to building an online business with global reach.</p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-meta">Present</div>
+            <div>
+              <h3>Global Wholesale Online Store</h3>
+              <p>Managing wholesale operations, supplier coordination, customer communication and online growth across international markets.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta">Singapore</div>
+            <div>
+              <h3>Professional Experience</h3>
+              <p>Developed practical working experience in Singapore's fast-moving and globally connected business environment.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="editorial-section" id="education">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-index">03 · Education</div>
+          <div>
+            <h2>The foundation<br>behind the journey.</h2>
+            <p class="section-copy">Completed my university studies at SEGi University in Malaysia.</p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-meta">Malaysia</div>
+            <div>
+              <h3>SEGi University</h3>
+              <p>University education that provided the foundation for my professional and entrepreneurial journey.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-panel">
+          <div>
+            <div class="section-index" style="color: var(--rose-light);">04 · Contact</div>
+            <h2>Let's begin a<br>conversation.</h2>
+            <p>For professional networking, business conversations and new opportunities.</p>
+          </div>
+          <div class="contact-card">
+            <small>WhatsApp / Phone</small>
+            <a class="phone" href="tel:+6584404715">+65 8440 4715</a>
+            <a class="button" href="https://wa.me/6584404715?text=Hello%20Airel%2C%20I%20visited%20your%20website." target="_blank" rel="noopener noreferrer">Chat on WhatsApp <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <span>© <span id="year"></span> Airel. All rights reserved.</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
